@@ -361,6 +361,8 @@ body{
 
 .container {
     background: #f7f7f7;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .about-index {
     padding: 15px;
@@ -899,4 +901,103 @@ body{
     line-height: 1;
     font-size: 16px;
     font-weight: bold;
+}
+.professionals-title {
+    color: #009140;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.professionals-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 25px;
+    &__item {
+        margin-bottom: 10px;
+        &-link {
+            display: flex;
+            align-items: center;
+            &:before{
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin-right: 15px;
+            background-image: url(../img/pdf.png);
+            background-size: cover;
+        }
+    }
+}
+}
+.gallery-list {
+    padding: 0;
+    margin: 0;
+    margin-right: -30px;
+    overflow: hidden;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+       display: inline-block;
+        width: 25%;
+        margin-bottom: 30px;
+        position: relative;
+        &-link {
+            font-size: 16px;
+            position: relative;
+            margin-right: 30px;
+            display: block;
+            text-decoration: none;
+            img{
+                width: 100%;
+            }
+        }
+        &-name {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #e87918;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
+.service {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &-item {
+        display: block;
+        padding-bottom: 15px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    &_img{
+        width: 265px;
+        height: 150px;
+        display: inline-block;
+        overflow: hidden;
+        float: left;
+        box-shadow: 6px 6px 6px -5px #b1b1b1, -2px 6px 6px -5px #b1b1b1;
+        img{
+            width: 100%;
+        }
+    }
+    &_text {
+        width: 75%;
+        font-size: 14px;
+        background: #f4f5f7;
+        float: right;
+        box-shadow: 6px 6px 6px -5px #b1b1b1, -2px 6px 6px -5px #b1b1b1;
+        padding: 20px 20px;
+        box-sizing: border-box;
+    }
+    &_title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #009140;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+}
+   
 }
