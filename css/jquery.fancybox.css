@@ -181,10 +181,9 @@
 	bottom: 0;
 	right: 0;
 }
-
 .fancybox-lock .fancybox-overlay {
-	overflow: auto;
-	overflow-y: scroll;
+    overflow: auto;
+    overflow-y: hidden;
 }
 
 /* Title helper */

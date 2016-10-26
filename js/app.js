@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
 
 	 $('.reviews-slider').slick({
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 4000,
         speed: 1000,
         arrows: true,
         slidesToShow: 2,
@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
     });
      $('.slider').slick({
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 4000,
         speed: 1000,
         arrows: false,
         slidesToShow: 1,
@@ -52,6 +52,28 @@ jQuery(document).ready(function ($) {
 
      //end
 });
+jQuery(function(f){
+
+    var element = f('#top');
+  f(window).scroll(function(){
+
+        element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](500);          
+
+    });
+
+
+});
+    $(document).ready(function() {
+ 
+$('a[href^="#"]').click(function(){
+        var el = $(this).attr('href');
+        $('body').animate({
+            scrollTop: $(el).offset().top}, 1500);
+        return false; 
+});
+    
+});
+
 jQuery(document).ready(function() { // Р В·Р В°Р С—РЎС“РЎРѓР С”Р В°Р ВµР С РЎРѓР С”РЎР‚Р С‘Р С—РЎвЂљ Р С—Р С•РЎРѓР В»Р Вµ Р В·Р В°Р С–РЎР‚РЎС“Р В·Р С”Р С‘ Р Р†РЎРѓР ВµРЎвЂ¦ РЎРЊР В»Р ВµР СР ВµР Р…РЎвЂљР С•Р Р†
    $(".fancybox").fancybox({
 		openEffect	: 'none',
