@@ -34,14 +34,12 @@ jQuery(document).ready(function ($) {
 
 
      //menu
-       $('.mob_start').click(function(e) {
+   $('.mob_start').click(function(e) {
     var $mob_part = $('.menu');
     if ($mob_part.css('display') != 'block') {
     	$(this).addClass('active');
-        $mob_part.animate({height: "show"}  ,"1000");
          $mob_part.addClass('m_menu');}
     else{
-         $mob_part.animate({height: "hide"},  "1000");
          $mob_part.removeClass('m_menu');
          $(this).removeClass('active');
     };
@@ -88,7 +86,12 @@ jQuery(function(f){
         element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](500);          
 
     });
-
+  $('a[href^="#"]').click(function(){
+        var el = $(this).attr('href');
+        $('body').animate({
+            scrollTop: $(el).offset().top}, 1500);
+        return false; 
+});
 
 });
     

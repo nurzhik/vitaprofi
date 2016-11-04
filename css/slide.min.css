@@ -156,14 +156,17 @@
     margin: 160px auto 0;
     font-weight: bold;
     font-size: 54px;
-    color:#fff;
+    color: #fff;
     line-height: 1;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.58);
+    text-transform: uppercase;
 }
 .slider_item_img {
     border-bottom: 4px solid #009140;
 }
 .slider__item img {
     display: block;
+    width: 100%;
 }
 
 
